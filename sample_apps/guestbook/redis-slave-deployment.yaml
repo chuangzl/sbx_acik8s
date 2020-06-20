@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   namespace: guestbook
   name: redis-slave
+  annotations:
+    opflex.cisco.com/endpoint-group: '{"tenant":"ccpdemo1","app-profile":"kubernetes","name":"Backend"}'
 spec:
   selector:
     matchLabels:
