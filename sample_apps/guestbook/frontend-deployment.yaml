@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   namespace: guestbook
   name: frontend
-  annotation:
+  annotations:
     opflex.cisco.com/endpoint-group: '{"tenant":"ccpdemo1","app-profile":"kubernetes","name":"Front"}'
 spec:
   selector:
