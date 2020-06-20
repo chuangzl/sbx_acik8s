@@ -1,6 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: guestbook
+  annotations:
+    opflex.cisco.com/endpoint-group: '{"tenant":"ccpdemo1","app-profile":"kubernetes","name":"Backend"}'
   name: my-nginx
 spec:
   selector:
