@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1 #  for k8s versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
   name: frontend
+  opflex.cisco.com/endpoint-group: '{"tenant":"ccpdemo1","app-profile":"kubernetes","name":"Front"}'
 spec:
   selector:
     matchLabels:
