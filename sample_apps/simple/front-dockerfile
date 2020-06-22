@@ -3,5 +3,5 @@ from python:3.9.0b3-alpine3.12
 RUN pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com requests
 ADD https://github.com/chuangzl/sbx_acik8s/raw/master/sample_apps/simple/front.py ./mnt/front.py
 WORKDIR /mnt
-CMD ["python3 front.py"]
+CMD [ "python3", "./front.py" ]
 EXPOSE 80
